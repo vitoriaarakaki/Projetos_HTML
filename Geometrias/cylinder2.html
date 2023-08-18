@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title></title>
+        <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'></script>
+        <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link>
+    </head>
+    <body>
+        <!-- Criar um ambiente para os sólidos -->
+        <x3d width="1020" height="500px">
+            <!-- Criaação da cena (scene) -->
+            <scene>
+                <!-- Criar um shape (área) -->
+                <shape>
+                    <!-- Desenhando o objeto -->
+                    <appearance>
+                        <material diffuseColor = "0 0 1"/>
+                    </appearance>  <!-- Fim da coloração -->
+
+                    <!-- Criando o objeto (box, cilindro, esfera, prisma, cone)-->
+                    <box size="2 2 2"/>
+
+                </shape> <!-- Fim do shape -->
+
+                <transform translate="2 0 0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor = '1 0 0'/>
+                        </appearance>
+                        <cylinder radius = '1' height='2'/>
+                    </shape>
+                </transform>
+            </scene> <!-- Fim da cena -->
+        </x3d> <!-- Fim do ambiente -->
+    </body>
+</html>
